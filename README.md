@@ -1,4 +1,4 @@
-#Lydia Technical Test 
+#LYDIA TECHNICAL CASE - TEST 
 
 
 Application React permettant de rechercher et filtrer des transactions Lydia avec une interface moderne et intuitive.
@@ -28,6 +28,7 @@ Normalisation des chaînes (minuscules + suppression accents)
 Calcul des statistiques (total, résultats, état recherche)
 
 -Composants-
+
 SearchBar : Input de recherche avec icônes et feedback visuel
 
 TransactionItem : Carte pour une transaction
@@ -38,3 +39,4 @@ TransactionList : Container de la liste
 **DEPLOIEMENT**
 
 Netlify
+
