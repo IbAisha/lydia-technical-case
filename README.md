@@ -38,5 +38,6 @@ TransactionList : Container de la liste
 
 **DEPLOIEMENT**
 
-Netlify
+Netlify via Github : lydia-technical-case.netlify.app
+
 
