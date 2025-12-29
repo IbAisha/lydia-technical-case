@@ -88,7 +88,7 @@ const TransactionItem = ({ transaction }) => {
             font-semibold              
             text-gray-900               
             mb-1                        
-                      
+            truncate         
             group-hover:text-blue-600   
             transition-colors          
           ">
@@ -96,10 +96,10 @@ const TransactionItem = ({ transaction }) => {
           </h3>
 
           {/* sender vers receiver*/}
-          <p className="text-sm text-gray-600 mb-2 flex items-center gap-1.5"> 
+          <p className="text-sm text-gray-600 mb-2 flex flex-wrap md:flex-nowrap items-center gap-1.5"> 
             {senderName}
-            <ArrowRight className="h-4 w-4 text-gray-400" />
-            {receiverName}
+            <ArrowRight className="h-4 w-4 flex-shrink-0 text-gray-400" />
+            <span className="break-all">{receiverName}</span>
           </p>
 
           {/*  date  */}
