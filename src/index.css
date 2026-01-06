@@ -1,2 +1,9 @@
 @import "tailwindcss";
 
+.btn-visible {
+  display: block;
+}
+
+.btn-hidden {
+  display: none;
+}

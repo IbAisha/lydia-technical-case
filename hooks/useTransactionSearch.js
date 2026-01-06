@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import { filterTransactions } from '../src/utils/searchUtils';
 
 export const useTransactionSearch = (transactions) => {

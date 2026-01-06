@@ -14,9 +14,9 @@ const TransactionItem = ({ transaction }) => {
    // STATUT DES TRANSACTIONS
   const getStatusColor = (status) => {
     const colors = {
-      completed: 'text-green-700',
-      pending: 'text-orange-700 ',
-      canceled: 'text-red-700 '
+      completed: 'text-green-700 bg-green-50',
+      pending: 'text-orange-700 bg-orange-50',
+      canceled: 'text-red-700 bg-red-50'
     };
     return colors[status] || 'text-gray-700 bg-gray-50 border-gray-200';
   };
@@ -84,11 +84,10 @@ const TransactionItem = ({ transaction }) => {
           
           {/* Label */}
           <h3 className="
-            text-lg                     
+            text-md                    
             font-semibold              
             text-gray-900               
-            mb-1                        
-            truncate         
+            mb-1                            
             group-hover:text-blue-600   
             transition-colors          
           ">
@@ -99,7 +98,7 @@ const TransactionItem = ({ transaction }) => {
           <p className="text-sm text-gray-600 mb-2 flex flex-wrap md:flex-nowrap items-center gap-1.5"> 
             {senderName}
             <ArrowRight className="h-4 w-4 flex-shrink-0 text-gray-400" />
-            <span className="break-all">{receiverName}</span>
+            {receiverName}
           </p>
 
           {/*  date  */}
@@ -117,11 +116,12 @@ const TransactionItem = ({ transaction }) => {
 
           {/* badge statut*/}
           <div className={`
-            flex items-center gap-1.5    
-            px-3 py-1.5                  
+            flex items-center gap-1    
+            px-2 py-1 sm:px-3 sm:py-1.5               
             rounded-full                
             border                   
-            text-xs font-medium 
+            text-[10px] sm:text-xs 
+            font-medium 
             ${getStatusColor(transaction.status)}
           `}>
             <StatusIcon />
